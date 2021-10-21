@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import styles from "/components/layout.module.css";
+import utilStyles from "/styles/utils.module.css";
 
 const name = "Paul";
 export const siteTitle = "Next.js Sample Website";
@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={`${utilStyles.heading2Xl} text-gray-400`}>{name}</h1>
+            <h1 className={`${utilStyles.heading2Xl} text-blue-700`}>{name}</h1>
           </>
         ) : (
           <>
